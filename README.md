@@ -89,8 +89,9 @@ WARN_DELETE_DELAY = 7
 python3 bot.py
 ```
 ---
+
+# 🧠 **AI Logic Flow**
 ```
-🧠 AI Logic Flow
 User message → clean text
       ↓
 DB match check
@@ -104,7 +105,7 @@ Edited messages + sticker violations also scanned (background)
 ---
 ```
 
-### **📡 Logging System **
+### 📡 **Logging System**
 Each deletion log includes:
 
 • User
@@ -115,7 +116,7 @@ Each deletion log includes:
 • Full message
 
 
-### ** 🧑‍💻 Developer Notes **
+### 🧑‍💻 **Developer Notes**
 
 • NSFW media detection module (placeholder-ready)
 • Highly modular architecture
