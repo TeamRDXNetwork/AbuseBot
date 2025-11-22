@@ -123,7 +123,7 @@ Each deletion log includes:
 • Fully customizable moderation system
 
 
-### ** ⭐ Credits **
+###  ⭐ **Credits**
 
 Built with ❤️ by @TrueNakshu
 Support: https://t.me/hellbotsupport
