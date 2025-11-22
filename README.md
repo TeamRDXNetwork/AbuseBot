@@ -72,6 +72,7 @@ Hybrid system: **Badword DB + AI Context Analyzer = Almost Zero False Positives 
 ### **1️⃣ Install Requirements**
 ```bash
 pip install -r requirements.txt
+```
 ### **2️⃣ Fill config.py**
 ```bash
 API_ID = 12345
@@ -82,12 +83,14 @@ OWNER_ID = 123456
 OPENROUTER_KEY = ""
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 WARN_DELETE_DELAY = 7
+```
 ### **3️⃣ Run the Bot**
 ```bash
-python3 bot.py 
+python3 bot.py
+```
+---
+```
 🧠 AI Logic Flow
-text
-Copy code
 User message → clean text
       ↓
 DB match check
@@ -98,9 +101,10 @@ AI says BAD → delete + warn + log
 AI says OK → ignore
       ↓
 Edited messages + sticker violations also scanned (background)
-📡 Logging System
-text
-Copy code
+---
+```
+
+### **📡 Logging System **
 Each deletion log includes:
 
 • User
@@ -109,16 +113,19 @@ Each deletion log includes:
 • Reason
 • Matched word
 • Full message
-🧑‍💻 Developer Notes
-text
-Copy code
+---
+
+### ** 🧑‍💻 Developer Notes **
+
 • NSFW media detection module (placeholder-ready)
 • Highly modular architecture
 • Auto-learning badword DB
 • Fully customizable moderation system
-⭐ Credits
-text
-Copy code
+---
+
+### ** ⭐ Credits **
+
 Built with ❤️ by @TrueNakshu
 Support: https://t.me/hellbotsupport
 Updates: https://t.me/TheAceUpdates
+---
