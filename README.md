@@ -113,7 +113,7 @@ Each deletion log includes:
 • Reason
 • Matched word
 • Full message
----
+
 
 ### ** 🧑‍💻 Developer Notes **
 
@@ -121,11 +121,11 @@ Each deletion log includes:
 • Highly modular architecture
 • Auto-learning badword DB
 • Fully customizable moderation system
----
+
 
 ### ** ⭐ Credits **
 
 Built with ❤️ by @TrueNakshu
 Support: https://t.me/hellbotsupport
 Updates: https://t.me/TheAceUpdates
----
+
