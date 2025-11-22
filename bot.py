@@ -139,12 +139,12 @@ async def warn_user(bot_obj, message, reason):
     user = message.from_user
     kb = InlineKeyboardMarkup([
          [
-            InlineKeyboardButton("˹ 𝐔ᴘᴅᴧᴛєs ˼", url="https://t.me/team_rdx_network"),
-            InlineKeyboardButton("˹ 𝐒υᴘᴘσʀᴛ ˼", url="https://t.me/team_rdx_point")
+            InlineKeyboardButton("📢 Update", url="https://t.me/TheAceUpdates"),
+            InlineKeyboardButton("💬 Support", url="https://t.me/hellbotsupport")
         ],
         [
-            InlineKeyboardButton("✙ 𝐀ᴅᴅ 𝐌є 𝐈η 𝐘συʀ 𝐆ʀσυᴘ ✙",
-            url=f"https://t.me/{(await bot.get_me()).username}?startgroup=true&admin=delete_messages+invite_users")
+            InlineKeyboardButton("➕ Add Me Baby",
+            url=f"https://t.me/@AbuseGuardianBot?startgroup=true&admin=delete_messages+invite_users")
         ]
     ])
     try:
@@ -183,13 +183,13 @@ async def start_cmd(_, m):
     short_caption = "🛡️ **ABUSE GUARDIAN BOT ** — online and active ⚡"
 
     btn = InlineKeyboardMarkup([
-        [InlineKeyboardButton("˹ 𝐇єʟᴘ 𝐀ηᴅ 𝐂ᴏᴍᴍᴧηᴅs ˼", callback_data="help")],
+        [InlineKeyboardButton("📜 Help", callback_data="help")],
         [
-            InlineKeyboardButton("˹ 𝐔ᴘᴅᴧᴛєs ˼", url="https://t.me/TheAceUpdates"),
-            InlineKeyboardButton("˹ 𝐒υᴘᴘσʀᴛ ˼", url="https://t.me/hellbotsupport")
+            InlineKeyboardButton("📢 Updates", url="https://t.me/TheAceUpdates"),
+            InlineKeyboardButton("💬 Support", url="https://t.me/hellbotsupport")
         ],
-        [InlineKeyboardButton("˹ 𝐃єᴠєʟσᴘєʀ ˼", url="https://t.me/TrueNakshu")],
-        [InlineKeyboardButton("⌯ 𝐀ᴅᴅ 𝐌є ⌯", url=f"https://t.me/@AbuseGuardianBot?startgroup=true")]
+        [InlineKeyboardButton("👑 Owner", url="https://t.me/TrueNakshu")],
+        [InlineKeyboardButton("➕ Add Me", url=f"https://t.me/@AbuseGuardianBot?startgroup=true")]
     ])
 
     full_text = (
@@ -199,17 +199,9 @@ async def start_cmd(_, m):
         "+--------------------------------------------+\n"
         "```"
         "\n"
-        "👾 **AI-Powered Guardian Online**\n"
-        "Scanning chats for abuse, hate & NSFW in real-time.\n\n"
-        "⚙️ **Quick Commands:**\n"
-        "• /help — View control panel\n"
-        "• /stats — Live moderation data\n\n"
-        "💀 **Protocol:** Zero Mercy | Neural Verified | Fast Purge\n"
-        "━━━━━━━━━━━━━━━━━━━━━━━\n"
-        "🕶️ **Status:** ACTIVE ✅\n"
-        "🌐 **Mode:** Silent | Secure | Relentless\n"
-        "━━━━━━━━━━━━━━━━━━━━━━━\n"
-        "⌯ _Welcome, Operator._\n"
+        "👋 **Hello!**\nI’m the AI-powered Guardian Bot.\n"
+        "I delete *real* abusive, hateful, or sexual messages.\n\n"
+        "Use /help for commands or /stats for live stats.",
         "⌯ ADD : @abuseGuardianBot ⌯ "
     )
 
@@ -225,7 +217,20 @@ async def start_cmd(_, m):
 @bot.on_callback_query(filters.regex("help"))
 async def help_btn(_, q):
     txt = (
-        "+--------------------------------------------------------+\n" "| 🛡️ ABUSE GUARDIAN — COMMANDS (SUDO ONLY) |\n" "+--------------------------------------------------------+\n" "| ⚙️ BASIC CONTROLS |\n" "| /add <word> — Add badword |\n" "| /rm <word> — Remove badword |\n" "| /list — Show all badwords |\n" "+--------------------------------------------------------+\n" "| 🧠 AI & CONFIGS |\n" "| /setlog <chat_id> — Set log channel [SUDO] |\n" "| /api <key> — Set OpenRouter API [SUDO] |\n" "+--------------------------------------------------------+\n" "| 👑 SUDO MANAGEMENT |\n" "| /addsudo <id/reply> — Add sudo user [SUDO] |\n" "| /rmsudo <id/reply> — Remove sudo user [SUDO] |\n" "| /sudolist — List sudo users [SUDO] |\n" "+--------------------------------------------------------+\n" "| 📢 BROADCAST & CLEANUP |\n" "| /broadcast <text> — Broadcast to all chats |\n" "| (sudo only) [SUDO] |\n" "+--------------------------------------------------------+\n" "| 🚫 STICKER FIREWALL |\n" "| /blockpack (reply sticker) — Block sticker pack [SUDO] |\n" "| /unblockpack (reply sticker)— Unblock pack [SUDO] |\n" "+--------------------------------------------------------+\n" "| 📊 STATS & INFO |\n" "| /stats — Show live moderation stats |\n" "+--------------------------------------------------------+\n" "| ℹ️ NOTE: Commands marked [SUDO] require owner/sudo |\n" "+--------------------------------------------------------+\n"
+         "**🛡️ Guardian Bot Commands:**\n\n"
+        "• /add <word> – Add badword (or reply)\n"
+        "• /rm <word> – Remove badword (or reply)\n"
+        "• /list – Show all badwords\n"
+        "• /setlog <chat_id> – Set log chat\n"
+        "• /api <key> – Set OpenRouter API key\n"
+        "• /addsudo <id/reply> – Add sudo user\n"
+        "• /rmsudo <id/reply> – Remove sudo user\n"
+        "• /sudolist – List sudo users\n"
+        "• /stats – Show moderation stats \n"
+        "• /broadcast <text> — Broadcast to all chats \n"
+        "• /blockpack (reply sticker) — Block sticker pack \n"
+        "• /unblockpack (reply sticker)— Unblock pack \n"
+            "| ℹ️ NOTE: Commands marked [SUDO] require owner/sudo add : @AbuseGuardianBot|\n"  
     )
     await q.message.edit_text(txt, parse_mode=PARSE_MODE)
 
@@ -480,6 +485,6 @@ async def edit_scan(_, m):
                 await send_log(f"✅ Safe edited text ignored: `{raw_text}`")
             return
 
-print("✅ Guardian Bot v3.3 running with extra features...")
+print("✅ Guardian Bot running with extra features... powered by @TrueNakshu")
 bot.run()
 
