@@ -1,7 +1,7 @@
 # 🛡️ **Abuse Guardian Bot**
 ### **AI-Powered Telegram Moderation Bot for Real-Time Abuse Protection**
 
-A next-gen AI moderation bot jo Telegram groups ko **abusive, hateful, sexual, toxic** messages se real-time protect karta hai —  
+A next-gen AI moderation bot jo Telegram groups ko **abusive, hateful, sexual, toxic** messages se real-time protect karta hai.  
 Hybrid system: **Badword DB + AI Context Analyzer = Almost Zero False Positives ⚡**
 
 ---
@@ -11,7 +11,7 @@ Hybrid system: **Badword DB + AI Context Analyzer = Almost Zero False Positives 
 ### 🔥 **AI-Powered Message Filtering**
 - GPT-based contextual analysis  
 - Real abusive message → auto delete  
-- Normal slang → ignored
+- Normal slang → ignored  
 
 ### 📌 **Smart Badword Engine**
 - Custom badword DB (add/remove anytime)  
@@ -27,12 +27,12 @@ Hybrid system: **Badword DB + AI Context Analyzer = Almost Zero False Positives 
 - Total deletions  
 - AI flags  
 - DB matches  
-- Edited viols  
-- Known chats
+- Edited violations  
+- Known chats  
 
 ### 🤖 **Full Sudo System**
 - Unlimited sudo users  
-- Owner & sudo have full power
+- Owner & sudo users have full control  
 
 ---
 
@@ -57,7 +57,7 @@ Hybrid system: **Badword DB + AI Context Analyzer = Almost Zero False Positives 
 | `/rm <word>` | Remove badword |
 | `/list` | Show all badwords |
 
-### ℹ️ **General**
+### ℹ️ **General Commands**
 | Command | Description |
 |--------|-------------|
 | `/start` | Start message |
@@ -69,11 +69,12 @@ Hybrid system: **Badword DB + AI Context Analyzer = Almost Zero False Positives 
 
 ## 🛠️ **Setup & Installation**
 
-### 1️⃣ Install Requirements
+### **1️⃣ Install Requirements**
 ```bash
-pip install -r requirements.txt 
-
-###  2️⃣ Fill config.py
+pip install -r requirements.txt
+2️⃣ Fill config.py
+python
+Copy code
 API_ID = 12345
 API_HASH = "your_api_hash"
 BOT_TOKEN = "12345:ABCDEF"
@@ -82,11 +83,13 @@ OWNER_ID = 123456
 OPENROUTER_KEY = ""
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 WARN_DELETE_DELAY = 7
-
 3️⃣ Run the Bot
+bash
+Copy code
 python3 bot.py
-
 🧠 AI Logic Flow
+text
+Copy code
 User message → clean text
       ↓
 DB match check
@@ -96,37 +99,28 @@ If match → AI verification
 AI says BAD → delete + warn + log
 AI says OK → ignore
       ↓
-Edited messages + stickers also scanned (background)
-
+Edited messages + sticker violations also scanned (background)
 📡 Logging System
+text
+Copy code
+Each deletion log includes:
 
-Each deletion contains:
-
-User
-
-Chat
-
-Time
-
-Reason
-
-Matched word
-
-Full message
-
+• User
+• Chat
+• Time
+• Reason
+• Matched word
+• Full message
 🧑‍💻 Developer Notes
-
-NSFW media detection module (placeholder)
-
-Modular structure
-
-Auto-learning DB
-
-Fully customizable moderation system
-
+text
+Copy code
+• NSFW media detection module (placeholder-ready)
+• Highly modular architecture
+• Auto-learning badword DB
+• Fully customizable moderation system
 ⭐ Credits
-
+text
+Copy code
 Built with ❤️ by @TrueNakshu
 Support: https://t.me/hellbotsupport
-
 Updates: https://t.me/TheAceUpdates
